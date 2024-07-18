@@ -1,0 +1,14 @@
+env: "dev"
+gin:
+  runmode: debug
+token:
+  access-token-ttl: 30s
+  refresh-token-ttl: 10m
+  issuer: golang-jwt-server
+  clean-timeout: 5m
+http:
+  port: 6969
+  read-timeout: 10m
+  write-timeout: 10m
+  idle-timeout: 20m
+  shutdown-timeout: 10m

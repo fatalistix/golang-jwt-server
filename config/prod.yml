@@ -1,0 +1,14 @@
+env: "prod"
+gin:
+  runmode: release
+token:
+  access-token-ttl: 15m
+  refresh-token-ttl: 1h
+  issuer: golang-jwt-server
+  clean-timeout: 5m
+http:
+  port: 6969
+  read-timeout: 4s
+  write-timeout: 4s
+  idle-timeout: 30s
+  shutdown-timeout: 5s
